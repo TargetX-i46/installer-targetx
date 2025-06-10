@@ -71,7 +71,7 @@ function main()
   #https://target-x.i46.io/safekey/diskKey?uuid=
   #echo $diskKey
   #echo "Copy and paste the diskKey to encrypt the disk!"
-  curl -k -u "$user:$password" -X GET "$server_protocol://$server_host:$server_port/safekey/storageKey?uuid=696fb51c-514b-44fb-b6fb-43d873613b49"
+  curl -k -u "$user:$password" -X GET "$server_protocol://$server_host:$server_port/safekey/storageKey?uuid=$device_uuid"
   if [ $self_signed -eq 1 ]; then
       storageKey=$(curl -k -u "$user:$password" -X GET "$server_protocol://$server_host:$server_port/safekey/storageKey?uuid=$device_uuid" | jq -r .storageKey)
   else
