@@ -1,0 +1,10 @@
+version=1.0.4
+server_protocol=https
+server_host=target-x.i46.io
+server_port=443
+device_name="1"
+device_description=""
+device_uuid=
+user=admin
+password=
+self_signed=0
