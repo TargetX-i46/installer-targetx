@@ -1,0 +1,5 @@
+#!/bin/bash
+date=$(date '+%Y-%m-%d %H:%M:%S')
+echo $date >> /opt/auth5g.log
+/opt/auth5g >> /opt/auth5g.log
+/opt/auth5g-status.sh
